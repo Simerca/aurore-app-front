@@ -1,0 +1,30 @@
+
+<div class="jumbotron" 
+    style="background-image:url({{cdnUrl+blog.thumbnail.url}})"
+    [ngStyle]="{
+        'background-size':'cover',
+        'background-position':'center'
+    }"
+    >
+    <h1 class="display-3 text-white">{{blog.title}}</h1>
+</div>
+
+<div class="container" >
+
+
+    <div class="row shadow-sm p-3 rounded">
+    
+        <div class="col-12 text-primary">
+            <a [routerLink]="['/']">Accueil</a> > {{blog.title}}
+            <hr>
+        </div>
+
+        <div class="col-12">
+                <div markdown [innerHTML]="blog.content">
+                    
+                </div>
+          </div>
+
+    </div>
+
+</div>

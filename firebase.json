@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "AuroreFront",
+      "public": "dist/AuroreFront",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

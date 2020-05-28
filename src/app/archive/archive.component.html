@@ -1,0 +1,22 @@
+<div class="container">
+
+    <div class="row my-5">
+        <h1> Blog </h1>
+    </div>
+    <div class="row my-5">
+
+        <div *ngFor="let post of blogPost" class="col-md-4">
+            <div class="card shadow-sm">
+                <img class="card-img-top" src="{{cdnUrl+post.Thumbnail.url}}" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">{{post.Title}}</h4>
+                    <p class="card-text">
+                        <a [routerLink]="['/blog/'+post.id]" class="btn btn-primary btn-sm btn-block">Lire l'article</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+</div>

@@ -1,0 +1,48 @@
+
+<div class="jumbotron" style="background-image:url('assets/img/backgroundapp.png')">
+    <div class="row p-5">
+        <div class="col-md-6 p-5 text-white">
+            <h1 class="display-3">Faites vous livrer les produits du quotidien</h1>
+            <p class="lead mt-5">
+                <a class="btn btn-dark btn-lg">S'inscrire à la Bêta public</a>
+            </p>
+        </div>
+        <div class="col-md-6">
+            <img style="max-height: 70vh;" src="../../assets/img/mockupauroreapp.png" />
+        </div>
+    </div>
+    
+</div>
+
+<div class="container">
+
+<div class="row my-5">
+    <div class="col-12" markdown [innerHTML]="homePages.Content"></div>
+</div>
+
+<div class="row">
+
+    <div class="col-12 mx-auto">
+        <h3>Restez informé</h3>
+        <hr>
+    </div>
+    <div class="col-12 mx-auto">
+        <div class="row">
+
+            <div *ngFor="let post of blogPost" class="col-md-4">
+                <div class="card shadow-sm">
+                    <img class="card-img-top" src="{{cdnUrl+post.Thumbnail.url}}" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">{{post.Title}}</h4>
+                        <p class="card-text">
+                            <a [routerLink]="['/blog/'+post.id]" class="btn btn-primary btn-sm btn-block">Lire l'article</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+</div>

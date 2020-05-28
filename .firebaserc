@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "ineed-2241f": {
+      "hosting": {
+        "AuroreFront": [
+          "ineed-2241f"
+        ]
+      }
+    }
+  }
+}

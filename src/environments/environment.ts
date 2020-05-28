@@ -3,7 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  strapi:{
+    apiUrl:"https://mighty-bastion-69600.herokuapp.com",
+    apiKey:"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNTkwMDQ3MzIzLCJleHAiOjE1OTI2MzkzMjN9.eo8ppAN0tAjGxZxjS3CsEynywz9CxNq-ir6zvVBBBcM"
+  }
 };
 
 /*
